@@ -1,0 +1,22 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    background-image: url("file:///C:/Users/o/Downloads/pexels-francesco-ungaro-18282378.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hii
+{
+    position: absolute;
+}
+.navbar-brand
+{
+   font-weight: 500 !important;
+   
+}

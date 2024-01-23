@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="kb">
+     <input type="button" class="button" value="get" onclick="ans()">
+    <h1 id="show"></h1>
+    <h1 id="click"></h1>
+
+    <script>
+        function ans()
+        {
+            let k,m;
+            k=document.getElementById('kb').value
+            m=k/1000;
+            document.getElementById('show').innerHTML=Math.round(m);
+
+        }
+    </script>
+</body>
+</html>

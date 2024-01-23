@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <input type="text" id="get1">
+ <input type="text" id="get2">
+
+ <button onclick="check()">print</button>
+<table>
+    <tr>
+        <td id="result"></td>
+   
+        <td id="result2"></td>
+    </tr>
+
+
+</table>
+
+ <script>
+    function check(){
+        const node=document.createElement('tr');
+        const node2=document.createElement("tr");
+      x=document.getElementById('get1').value;
+      y=document.getElementById('get2').value;
+
+      const textnode=document.createTextNode(x);
+      const textnode2=document.createTextNode(y);
+
+      node.appendChild(textnode);
+      node2.appendChild(textnode2);
+
+      document.getElementById('result').appendChild(node);
+      document.getElementById('result2').appendChild(node2);
+
+
+    
+    }
+ </script>
+    
+</body>
+</html>

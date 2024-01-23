@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            height: 100vh;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container
+        {
+            width: 500px;
+            height: 500px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        #weight
+        {
+            width:300px;
+            height:50px;
+            margin: 20px 0px;
+        }
+        #height
+        {
+            width:300px;
+            height:50px;
+            margin: 20px 0px;
+        }
+        .button
+        {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            color: aliceblue;
+        }
+        h1
+        {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="weight">
+        <input type="text" id="height">
+        <input type="button" class="button" value="submit" onclick="ans()">
+        <h1 id="click"></h1>
+        <h1 id="result"></h1>
+    </div>
+    <script>
+        function ans()
+        {
+            let w,h,t;
+            w=document.getElementById('weight').value;
+            h=document.getElementById('height').value;
+            t=(w/(h*h)*10000);
+            document.getElementById('click').innerHTML=Math.round(t);
+
+            if(t>=30)
+            {
+                document.getElementById('result').innerHTML="very over weight";
+                document.getElementById('result').style.color="red";
+            }
+           else if(t>=25)
+            {
+                document.getElementById('result').innerHTML="over weight";
+                document.getElementById('result').style.color="yellow";
+            }
+            else if(t>=18)
+            {
+                document.getElementById('result').innerHTML="normal";
+                document.getElementById('result').style.color="green";
+            }
+           else
+          {
+            document.getElementById('result').innerHTML="under weight";
+            document.getElementById('result').style.color="blue";
+          }
+
+
+        }
+    </script>
+</body>
+</html>

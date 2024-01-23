@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <table cellspacing="10px">
+            <tr>
+                <td>bill no</td>
+                <td><input type="text" id="bill"></td>
+            </tr>
+            <tr>
+                <td>customer name</td>
+                <td><input type="text" id="cus"></td>
+            </tr>
+            <tr>
+                <td>product name</td>
+                <td> <input list="browsers" name="browser" id="pname">
+                    <datalist id="browsers">
+                    <option value="milk">
+                    <option value="rice">
+                    <option value="oil">
+                    <option value="magie">
+                    </datalist>         
+                
+                </td>
+            </tr>
+            <tr>
+                <td>quantyity</td>
+                <td><input type="text" id="quan"></td>
+            </tr>
+            <tr>
+                <td>perprice</td>
+                <td><input type="text" id="per"></td>
+            </tr>
+            <tr>
+                <td>totalprice</td>
+                <td><input type="text" id="tot"></td>
+            </tr>
+            <tr>
+                <td>discount</td>
+                <td><input type="text" id="dis"></td>
+            </tr>
+            <tr>
+                <td>gst</td>
+                <td><input type="text" id="gst"></td>
+            </tr>
+            <tr>
+                <td>grantotal</td>
+                <td><input type="text" id="gran"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" onclick="ans()" id="result" value="check"></td>
+                <td><input type="button" class="ck" onclick="sub()" id="click" value="clear"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" class="gen" onclick="gee()" id="gen" value="generate"></td>
+                <td ><input type="button" class="new" onclick="re()" id="gen" value="new"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" class="reep" onclick="fresh()" id="refresh" value="refresh"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="container1">
+        <table >
+            <tr>
+                <td >bill no</td>
+                <td> customer name</td>
+                <td> product name</td>
+                <td> quantity</td>
+                <td> per price</td>
+                <td> total price</td>
+                <td>discount</td>
+                <td>gst</td>
+                <td>total price</td>
+            </tr>
+            <tr>
+                <td id="result1"></td>
+                <td id="result2"></td>
+                <td id="result3"></td>
+                <td id="result4"></td>
+                <td id="result5"></td>
+                <td id="result6"></td>
+                <td id="result7"></td>
+                <td id="result8"></td>
+                <td id="result9"></td>
+          </tr>
+          <tr>
+            <td colspan="9"> <button onclick="chh()" class="chh">print</button></td>
+          </tr>
+        
+            
+        </table>
+       
+                
+               
+    
+
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

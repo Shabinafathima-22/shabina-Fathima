@@ -1,0 +1,61 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator
+{
+    width: 400px;
+    height:fit-content;
+    border: 2px solid black ;
+    box-shadow: 10px 10px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+h1{
+    font-size: 30px;
+    color: brown;
+}
+table
+{
+    width: 100%;
+    height: 400px;
+    
+}
+#screen
+{
+    width: 100%;
+    height:50px;
+    font-size: 30px;
+    text-align: end;
+   
+   
+}
+.button
+{
+    width: 100%;
+    height:100px;
+    font-size: larger;
+   background-color:black;
+   color: white;
+   border:none;
+
+}
+.operator
+{
+    width: 100%;
+    height:100px;
+    font-size: larger;
+    
+    background-color:orangered;
+    color: white;
+    border:none;
+}

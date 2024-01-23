@@ -1,0 +1,33 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.head
+{
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+#msg
+{
+    font-size: 30px;
+    text-align: center;
+    color:maroon;
+}
+#gameboard
+{
+    border: 2px solid black;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+#score
+{
+    font-size: 30px;
+    text-align: center;
+    color:teal;
+}

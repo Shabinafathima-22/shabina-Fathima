@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table cellspacing="10px">
+            <tr>
+                <td>bill no</td>
+                <td><input type="text" id="bill"></td>
+            </tr>
+            <tr>
+                <td>customer name</td>
+                <td><input type="text" id="cus"></td>
+            </tr>
+            <tr>
+                <td>product name</td>
+                <td> <input list="browsers" name="browser" id="pname">
+                    <datalist id="browsers">
+                    <option value="milk">
+                    <option value="rice">
+                    <option value="oil">
+                    <option value="magie">
+                    </datalist>         
+                
+                </td>
+            </tr>
+            <tr>
+                <td>quantyity</td>
+                <td><input type="text" id="quan"></td>
+            </tr>
+            <tr>
+                <td>perprice</td>
+                <td><input type="text" id="per"></td>
+            </tr>
+            <tr>
+                <td>totalprice</td>
+                <td><input type="text" id="tot"></td>
+            </tr>
+            <tr>
+                <td>discount</td>
+                <td><input type="text" id="dis"></td>
+            </tr>
+            <tr>
+                <td>gst</td>
+                <td><input type="text" id="gst"></td>
+            </tr>
+            <tr>
+                <td>grantotal</td>
+                <td><input type="text" id="gran"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" onclick="ans()" id="result" value="check"></td>
+                <td><input type="button" class="ck" onclick="sub()" id="click" value="clear"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" class="gen" onclick="gee()" id="gen" value="generate"></td>
+                <td ><input type="button" class="new" onclick="re()" id="gen" value="new"></td>
+            </tr>
+            <tr>
+                <td ><input type="button" class="reep" onclick="fresh()" id="refresh" value="refresh"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="container1">
+     <table>
+        <tr>
+            <table cellspacing="10px">
+                <tr>
+                    <td id="b1">bill no</td>
+                    <td> <label id="line1"></label></td>
+                </tr>
+                <tr>
+                    <td id="b2" >customer name</td>
+                    <td> <label id="line2"></label></td>
+                </tr>
+                <tr>
+                    <td id="b3">product name</td>
+                    <td> <label id="line3"></label></td>
+                </tr>
+                <tr>
+                    <td id="b4">quantyity</td>
+                    <td> <label id="line4"></label></td>
+                   
+                </tr>
+                <tr>
+                    <td id="b5">perprice</td>
+                    <td> <label id="line5"></label></td>
+                    
+                </tr>
+                <tr>
+                    <td id="b6">totalprice</td>
+                    <td> <label id="line6"></label></td>
+                </tr>
+                <tr>
+                    <td id="b7">discount</td>
+                    <td> <label id="line7"></label></td>
+                  
+                </tr>
+                <tr>
+                    <td id="b8">gst</td>
+                    <td> <label id="line8"></label></td>
+                   
+                </tr>
+                <tr>
+                    <td id="b9">grantotal</td>
+                    <td> <label id="line9"></label></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="but" value="print" id="pin" onclick="pin()"></td>
+                    
+                </tr>
+                
+               
+     </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

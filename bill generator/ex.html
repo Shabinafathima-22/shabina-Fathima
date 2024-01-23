@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="value1">
+    <input type="text" id="value2">
+    <button onclick="ans()">get</button>
+  <table>
+    <tr>
+        <td>
+            <ul id="reult"></ul>
+        </td>
+        <td>
+            <ul id="reult2"></ul>
+        </td>
+    </tr>
+  </table>
+
+  
+
+    <script>
+
+        function ans(){
+            const val1=document.createElement("tr");
+            const val2=document.createElement("tr");
+             
+            x=document.getElementById('value1').value;
+            y=document.getElementById('value2').value;
+
+            const node1=document.createTextNode(x);
+            const node2=document.createTextNode(y);
+
+            val1.appendChild(node1);
+            val2.appendChild(node2);
+
+            document.getElementById("reult").appendChild(val1);
+            document.getElementById("reult2").appendChild(val2);
+        }
+
+    </script>
+    
+</body>
+</html>

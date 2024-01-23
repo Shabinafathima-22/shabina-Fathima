@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <table cellspacing="19px">
+                <tr>
+                    <td>bill no:</td>
+                    <td><input type="text" id="bill" class="button"></td>
+                </tr>
+                <tr>
+                    <td>customer name:</td>
+                    <td><input type="text" id="cusna"class="button"></td>
+                </tr>
+                <tr>
+                    <td>product name:</td>
+                    <td><input list="browsers" name="browser" id="pname">
+                        <datalist  id="browsers">
+                            <option value="milk"></option>
+                            <option value="rice"></option>
+                            <option value="chocolate"></option>
+                            <option value="magie"></option>
+                            
+
+                        </datalist>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>quantity:</td>
+                    <td><input type="text" id="qua"class="button"></td>
+                </tr>
+                <tr>
+                    <td>perprice:</td>
+                    <td><input type="text" id="per" class="button"></td>
+                </tr>
+                <tr>
+                    <td>total price:</td>
+                    <td><input type="text" id="tot"class="button"></td>
+                </tr>
+                <tr>
+                    <td>discount:</td>
+                    <td><input type="text" id="dis"class="button"></td>
+                </tr>
+                <tr>
+                    <td>goodtax:</td>
+                    <td><input type="text" id="gst"class="button"></td>
+                </tr>
+                <tr>
+                    <td>grantotal:</td>
+                    <td><input type="text" id="gran"class="button"></td>
+                 
+    
+                </tr>
+                <tr>
+                    <td> <button class="btn" id="check" onclick="ans()">check</button></td>
+                    <td><button class="btn" id="clear" onclick="clear()">clear</button></td>
+                 
+                    
+                </tr>
+            
+                  <tr>
+                    <td><button class="btn" id="generate" onclick="gen()">generate</button></td>
+                    <td> <button class="btn" id="refresh" onclick="fresh()">refresh</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="btn" id="new" onclick="fresh()">new</button></td>
+                    
+                  </tr>
+                    
+             </table>
+        </div>
+        <div class="container2">
+        </div>
+    </div>
+
+
+    <script src="app9.js"></script>
+</body>
+</html>
